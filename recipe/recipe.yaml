@@ -12,8 +12,8 @@ source:
   sha256: 8aa11acd581706a5ed2c0988385c8ca9eff5312255bd305204e9a69c1e7ae898
 
 build:
+  number: 1
   noarch: python
-  number: 0
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
@@ -24,10 +24,9 @@ requirements:
     - pip
   run:
     - ad-hoc-diffractometer >=0.11.2
-    - hklpy2 >=0.7.1
+    - hklpy2 >=0.7.2
     - numpy
     - python >=${{ python_min }}
-    - __linux
 
 tests:
   - python:
@@ -48,6 +47,8 @@ about:
   license: LicenseRef-UChicago-Argonne-LLC-License
   license_file: LICENSE
   summary: 'Solvers for the hklpy2 diffractometer control package.'
+  documentation: https://prjemian.github.io/hklpy2_solvers/
+  repository: https://github.com/prjemian/hklpy2_solvers
   description: |
     # hklpy2_solvers
 
@@ -90,8 +91,6 @@ about:
             </td>
         </tr>
     </table>
-  documentation: https://prjemian.github.io/hklpy2_solvers/
-  repository: https://github.com/prjemian/hklpy2_solvers
 
 extra:
   recipe-maintainers:
