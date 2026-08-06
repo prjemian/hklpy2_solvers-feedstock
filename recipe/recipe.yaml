@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: 0.3.5
+  version: "0.3.7"
 
 package:
   name: hklpy2_solvers
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/h/hklpy2-solvers/hklpy2_solvers-${{ version }}.tar.gz
-  sha256: c0995b3deb4ab828bfa545947e3441b8926f44a6102797ea4d5430912ba95d6a
+  sha256: 8aa11acd581706a5ed2c0988385c8ca9eff5312255bd305204e9a69c1e7ae898
 
 build:
   noarch: python
@@ -27,7 +27,7 @@ requirements:
     - hklpy2 >=0.7.1
     - numpy
     - python >=${{ python_min }}
-    - __linux 
+    - __linux
 
 tests:
   - python:
