@@ -47,6 +47,8 @@ about:
   license: LicenseRef-UChicago-Argonne-LLC-License
   license_file: LICENSE
   summary: 'Solvers for the hklpy2 diffractometer control package.'
+  documentation: https://prjemian.github.io/hklpy2_solvers/
+  repository: https://github.com/prjemian/hklpy2_solvers
   description: |
     # hklpy2_solvers
 
@@ -89,8 +91,6 @@ about:
             </td>
         </tr>
     </table>
-  documentation: https://prjemian.github.io/hklpy2_solvers/
-  repository: https://github.com/prjemian/hklpy2_solvers
 
 extra:
   recipe-maintainers:
