@@ -1,18 +1,18 @@
 schema_version: 1
 
 context:
-  version: "0.3.7"
+  version: "0.3.8"
 
 package:
   name: hklpy2_solvers
   version: ${{ version }}
 
 source:
-  url: https://pypi.org/packages/source/h/hklpy2-solvers/hklpy2_solvers-${{ version }}.tar.gz
-  sha256: 8aa11acd581706a5ed2c0988385c8ca9eff5312255bd305204e9a69c1e7ae898
+  url: https://pypi.org/packages/source/${{ name[0] }}/hklpy2-solvers/${{ name }}-${{ version }}.tar.gz
+  sha256: d98e7162a2c891ab30c4891ad254806feb6548e7d543a8623a69c21865efd2e6
 
 build:
-  number: 2
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
@@ -23,8 +23,8 @@ requirements:
     - python ${{ python_min }}.*
     - pip
   run:
-    - ad-hoc-diffractometer >=0.11.2
-    - hklpy2 >=0.7.2
+    - ad-hoc-diffractometer >=0.11.4
+    - hklpy2 >=0.7.3
     - numpy
     - python >=${{ python_min }}
 
