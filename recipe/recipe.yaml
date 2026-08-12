@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "0.3.8"
+  version: "0.3.9"
   name: hklpy2_solvers
 
 package:
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/hklpy2-solvers/${{ name }}-${{ version }}.tar.gz
-  sha256: d98e7162a2c891ab30c4891ad254806feb6548e7d543a8623a69c21865efd2e6
+  sha256: a335e286a3f9702f90967dabdc0fa4b9bcc0ca75b0d3f2774028e1213d062afe
 
 build:
   number: 0
